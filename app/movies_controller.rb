@@ -29,7 +29,7 @@ def can_be_created_in_a_block(args = {title: "Home Alone", release_date: 1990})
   # release_date == 1990
   
   Movie.create do |m|
-    __
+    m.update(args)
   end
 end
 
@@ -60,7 +60,7 @@ end
 def can_find_using_where_clause_and_be_sorted
   # For this test return all movies released after 2002 and ordered by 
   # release date descending
-  __
+  
 end
 
 def can_be_found_updated_and_saved
