@@ -60,7 +60,7 @@ end
 def can_find_using_where_clause_and_be_sorted
   # For this test return all movies released after 2002 and ordered by 
   # release date descending
-  Movie.where(:release_date.to_i > 2002)
+  Movie.where(release_date.to_i > 2002)
   
 end
 
